@@ -68,3 +68,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## For Server
+
+To start the server in the project directory, you can run:
+
+### `cd server ; node index.js`
+
+Runs the app in the development mode.\
+Open [http://localhost:4000](http://localhost:4000) to view it in the browser.
+
+

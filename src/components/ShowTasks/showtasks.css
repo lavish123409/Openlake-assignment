@@ -1,0 +1,50 @@
+.show-tasks {
+    width: 100%;
+    /* text-align: center; */
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    margin: 2%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+
+.show-tasks > h1 {
+    text-align: center;
+}
+
+
+.task-box {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 90%;
+    margin: 10px auto;
+    /* background-color: rgb(233, 232, 232);
+    border-radius: 7px; */
+}
+
+.task-box > * {
+    margin: 20px;
+}
+
+.task-box > h3 {
+    flex: 0.7;
+}
+
+.task-box > input {
+    flex: 0.1;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.task-box > button {
+    flex: 0.2;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    font-size: 15px;
+    background-color:  #D9534F;
+    color: white;
+    cursor: pointer;
+}
