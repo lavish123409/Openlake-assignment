@@ -36,6 +36,18 @@ function ShowTasks() {
         .catch(err => console.log(err));
     }
 
+    function computedmessage(str)
+    {
+        var res = "";
+        if(str.length <= 35)
+        return str;
+        
+        for(var i=0;i<32;i++)
+            res += str[i];
+        res += "...";
+        return res;
+    }
+
 
     return (
         <div className = "show-tasks">
@@ -45,7 +57,14 @@ function ShowTasks() {
         {
             tasks.map( tsk => (
                 <div className = "task-box" key={tsk.id} id={tsk.id} >
-                <h3>{tsk.task}</h3>
+                <h3>
+                <div class="tooltip">{computedmessage(tsk.task)}
+                    <span class="tooltiptext">{tsk.task}</span>
+                </div>
+                    {/*
+                    computedmessage(tsk.task)
+                    // tsk.task + `${tsk.task.length}`
+                    */} </h3>
                 {
                     tsk.done ?
                     (<input type="checkbox" checked onChange={() => checkedbox(true , tsk.id)}/>)
