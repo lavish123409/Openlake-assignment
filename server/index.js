@@ -7,6 +7,7 @@ const cors = require('cors');
 let doneornot = {};*/
 let taskdata = [];
 let keys ={};
+var port = process.env.port || 4000;
 
 
 const app = express();
@@ -69,6 +70,6 @@ app.delete('/remove/:id' , (req , res) => {
 
 
 
-app.listen(4000,()=>{
+app.listen(port,()=>{
     console.log('Server running on 4000');
 });
