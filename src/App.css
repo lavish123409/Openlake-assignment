@@ -2,6 +2,7 @@
   display: flex;
   width:auto;
   justify-content: center;
+  align-items: center;
 }
 
 .side-area {
@@ -15,6 +16,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+
+@media only screen and (max-width : 400px) {
+  .App {
+    width: auto;
+    margin: auto;
+  }
+
+  /* .side-area {
+    flex: 0;
+  } */
+
+  .main-area {
+    width: 95%;
+    flex : 1;
+    /* margin: 20px 10px; */
+    /* background-color: black; */
+  }
 }
 
 

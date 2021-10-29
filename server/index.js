@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
+
 /*let tasks = [];
 let doneornot = {};*/
 let taskdata = [];
@@ -11,6 +12,8 @@ let keys ={};
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
+
+app.use('/' , express.static('../build'));
 
 app.get('/' , (req,res) => {
     res.send("Server running");

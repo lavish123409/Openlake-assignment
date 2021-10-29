@@ -31,8 +31,23 @@
     border-radius: 5px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    font-size: 15px;
     background-color:  #5CB85C;
     color: white;
     cursor: pointer;
+  }
+
+
+  @media only screen and (max-width : 400px) {
+    .input-area > input {
+      height: 25px;
+      /* margin: 15px; */
+      font-size: 12px;
+      /* padding-left: 5px; */
+    }
+
+    .input-area > button {
+      height: 35px;
+      width: 100px;
+      font-size: 13px;
+    }
   }
