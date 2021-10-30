@@ -5,7 +5,7 @@ import './addtask.css';
 function onSubmit() {
   var inp = document.getElementById('taskMessage');
   // console.log(inp.value);
-  var url = 'http://localhost:4000/adddata';
+  var url = 'https://open-lake-assignment.herokuapp.com/adddata';
 
   axios.post(url , {mssg : inp.value})
   .then(res => {

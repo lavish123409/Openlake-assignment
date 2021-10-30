@@ -6,7 +6,7 @@ function ShowTasks() {
     const [tasks, setTasks] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:4000/tasks')
+        axios.get('https://open-lake-assignment.herokuapp.com/tasks')
         .then(res => setTasks(res.data))
         .catch(err => console.log(err));
     }, []);
@@ -15,7 +15,7 @@ function ShowTasks() {
     {
         value = !value;
 
-        const url = `http://localhost:4000/done/${id}`;
+        const url = `https://open-lake-assignment.herokuapp.com/done/${id}`;
         axios.put(url , {chk : value})
         .then(res => {
             // console.log(res.data);
@@ -27,7 +27,7 @@ function ShowTasks() {
 
     function deleteit(id)
     {
-        const url = `http://localhost:4000/remove/${id}`;
+        const url = `https://open-lake-assignment.herokuapp.com/remove/${id}`;
         axios.delete(url)
         .then(res => {
             // console.log(res.data);
