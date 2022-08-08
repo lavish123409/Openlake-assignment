@@ -50,7 +50,7 @@ function ShowTasks() {
     <div className="show-tasks">
       <h1>
         Tasks
-        {console.log(serverurl)}
+        {/* {console.log(serverurl)} */}
       </h1>
       {tasks.map((tsk) => (
         <div className="task-box" key={tsk.id} id={tsk.id}>
