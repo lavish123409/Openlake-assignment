@@ -7,7 +7,7 @@ const cors = require("cors");
 let doneornot = {};*/
 let taskdata = [];
 let keys = {};
-var port = process.env.port || 4000;
+var port = process.env.PORT || 4000;
 
 const app = express();
 app.use(cors());
