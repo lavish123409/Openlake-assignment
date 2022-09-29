@@ -74,5 +74,6 @@ app.delete("/remove/:id", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log("Server running on 4000");
+  console.log(process.env);
+  console.log(`Server running on ${port}`);
 });
