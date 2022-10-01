@@ -7,6 +7,8 @@ function ShowTasks() {
   const serverurl = process.env.REACT_APP_SERVER_URL;
 
   useEffect(() => {
+    console.log(process.env);
+    console.log(serverurl);
     axios
       .get(serverurl + "tasks")
       .then((res) => setTasks(res.data))
