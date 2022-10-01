@@ -7,7 +7,7 @@ function onSubmit() {
   // console.log(inp.value);
   const serverurl = process.env.REACT_APP_SERVER_URL;
 
-  var url = serverurl + "/adddata";
+  var url = serverurl + "adddata";
 
   axios
     .post(url, { mssg: inp.value })

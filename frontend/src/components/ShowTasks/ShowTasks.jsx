@@ -7,10 +7,8 @@ function ShowTasks() {
   const serverurl = process.env.REACT_APP_SERVER_URL;
 
   useEffect(() => {
-    console.log(process.env);
-    console.log(serverurl);
     axios
-      .get(serverurl + "/tasks")
+      .get(serverurl + "tasks")
       .then((res) => setTasks(res.data))
       .catch((err) => console.log(err));
   }, [serverurl]);
@@ -18,7 +16,7 @@ function ShowTasks() {
   function checkedbox(value, id) {
     value = !value;
 
-    const url = serverurl + `/done/${id}`;
+    const url = serverurl + `done/${id}`;
     axios
       .put(url, { chk: value })
       .then((res) => {
@@ -29,7 +27,7 @@ function ShowTasks() {
   }
 
   function deleteit(id) {
-    const url = serverurl + `/remove/${id}`;
+    const url = serverurl + `remove/${id}`;
     axios
       .delete(url)
       .then((res) => {
